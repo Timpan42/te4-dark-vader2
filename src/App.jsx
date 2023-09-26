@@ -35,8 +35,6 @@ function App() {
       <h1>Dark Väder</h1>
       {weatherData.main ? (
         <>
-          <h2>lat: {lat}</h2>
-          <h2>long: {long}</h2>
           <h2>City: {weatherData.name}</h2>
           <h2>Temp: {(weatherData.main.temp - 273.15).toFixed(1)} C</h2>
         </>
