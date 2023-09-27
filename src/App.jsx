@@ -63,18 +63,19 @@ function App() {
 
   return (
     <>
-      <h1>Dark Väder</h1>
+      <div className='container'>
+        <h1>Dark Väder</h1>
 
-      {weatherData.main ? (
-        <>
-          <h2>City: {weatherData.name}</h2>
-          <h2>Temp: {(weatherData.main.temp - 273.15).toFixed(1)} </h2>
-        </>
-      ) : (
-        <Spinner />
-      )
-      }
-
+        {weatherData.main ? (
+          <>
+            <h2>City: {weatherData.name}</h2>
+            <h2>Temp: {(weatherData.main.temp - 273.15).toFixed(1)} </h2>
+          </>
+        ) : (
+          <Spinner />
+        )
+        }
+      </div>
     </>
   )
 }
