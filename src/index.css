@@ -2,6 +2,7 @@
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 @import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
 :root {
     --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
@@ -44,9 +45,10 @@
 
     --border-radius: var(--size-step-1);
 
-    --base-font: 'Star Wars', sans-serif;
+    --base-font: 'Orbitron', sans-serif;
+    --header-font: 'Star Wars', sans-serif;
 
-    --color-fg-dark: #800505;
+    --color-fg-dark: #d80f0f;
     --color-fg-light: #fcfaf8;
     --color-bg-dark: #050404;
     --color-bg-light: rgb(252, 250, 248);
@@ -60,6 +62,7 @@ body {
 }
 
 h1 {
+    font-family: var(--header-font);
     font-size: var(--step-5);
     text-align: center;
 }
@@ -73,7 +76,7 @@ h3 {
 }
 
 h1 h2 h3 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 p {

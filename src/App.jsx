@@ -63,19 +63,45 @@ function App() {
 
   return (
     <>
-      <div className='container'>
-        <h1>Dark Väder</h1>
+      <article className='container'>
+
+        <div className='top-container'>
+        </div>
+        <h1>Dark Vader</h1>
 
         {weatherData.main ? (
           <>
-            <h2>City: {weatherData.name}</h2>
-            <h2>Temp: {(weatherData.main.temp - 273.15).toFixed(1)} </h2>
+            <dir>
+              <p>City: {weatherData.name}</p>
+              <p>Temp: {(weatherData.main.temp - 273.15).toFixed(1)} </p>
+            </dir>
           </>
         ) : (
           <Spinner />
         )
         }
-      </div>
+      </article>
+      <footer>
+        <div>
+          <p>
+            Photo by Elyarm on <a href="https://wallpapers.com/">wallpapers.com</a>
+          </p>
+          <p>
+            link to photo: <a href="https://wallpapers.com/wallpapers/darth-vader-awesome-pose-ph6buen5c65m64mj.html">https://wallpapers.com/wallpapers/darth-vader-awesome-pose-ph6buen5c65m64mj.html</a>
+          </p>
+        </div>
+
+        <div>
+          <p>
+            Photo by
+            <a href="https://www.hdwallpapers.net/community/crabman"> Darnell Turne </a>
+            on <a href="https://www.hdwallpapers.net/">HDwallpapers.net</a>
+          </p>
+          <p>
+            link to photo: <a href="https://www.hdwallpapers.net/typography/darth-vader-typographic-portrait-wallpaper-545.htm">https://www.hdwallpapers.net/typography/darth-vader-typographic-portrait-wallpaper-545.htm</a>
+          </p>
+        </div>
+      </footer>
     </>
   )
 }

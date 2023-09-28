@@ -5,3 +5,10 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+.top-container {
+    background-image: url("./assets/darth_vader_top_40.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
